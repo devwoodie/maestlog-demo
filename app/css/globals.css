@@ -9,21 +9,17 @@ h1{
     font-family: 'Yeongdo-Rg', 'serif';
 }
 .list-bg{
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    margin-top: 20px;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3개의 열을 생성합니다. */
+    gap: 20px;
 }
 .list-bg a{
     display: block;
-    width: 32.5%;
     box-shadow: rgb(224, 224, 224) 0 2px 4px 0;
     background: white;
     border-radius: 10px;
     padding: 20px;
     transition: .3s;
-    margin-bottom: 15px;
 }
 .list-bg a:hover{
     box-shadow: rgba(224, 224, 224, 0.6) 0 1px 12px 6px;
@@ -60,4 +56,6 @@ h1{
 .detail-page p{
     padding: 20px 0;
     font-size: 20px;
+    line-height: 1.2;
+    white-space: pre;
 }
