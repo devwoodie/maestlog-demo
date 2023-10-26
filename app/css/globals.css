@@ -8,6 +8,15 @@
 h1{
     font-family: 'Yeongdo-Rg', 'serif';
 }
+.write-btn{
+    background: #000;
+    color: #fff;
+    padding: 5px 8px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
 .list-bg{
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* 3개의 열을 생성합니다. */
@@ -58,4 +67,39 @@ h1{
     font-size: 20px;
     line-height: 1.2;
     white-space: pre;
+}
+
+/* 글 작성 페이지 */
+.p-20 {
+    padding: 20px;
+}
+.p-20 h4{
+    font-size: 22px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+.p-20 input {
+    box-sizing: border-box;
+    padding: 10px;
+    display: block;
+    margin-bottom: 10px;
+    width: 30%;
+}
+.p-20 textarea{
+    box-sizing: border-box;
+    padding: 10px;
+    display: block;
+    margin-bottom: 10px;
+    height: 200px;
+    width: 30%;
+    resize: none;
+}
+.p-20 button.submit-btn {
+    padding: 10px 15px;
+    background: #000000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 30%;
+    color: #fff;
 }
