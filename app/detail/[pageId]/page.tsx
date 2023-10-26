@@ -1,6 +1,7 @@
 import {connectDB} from "@/utils/database";
 import {ObjectId} from "mongodb";
 import BackBtn from "@/components/BackBtn";
+import Button from "@/components/Button";
 
 export default async function Detail(props: any){
 
@@ -14,8 +15,9 @@ export default async function Detail(props: any){
 
     return(
         <>
-            <div style={{textAlign: "right"}}>
-                <BackBtn title="뒤로" style={{marginBottom: "10px"}} />
+            <div style={{display: "flex", alignItems: "center", justifyContent: "flex-end"}}>
+                <Button title="수정" style={{marginBottom: "10px"}} link={`/edit/${pageId}`} />
+                <Button title="뒤로" style={{marginBottom: "10px", marginLeft: "10px"}} link={`/list`} />
             </div>
             <div className="detail-page">
                 <h4>{result.title}</h4>

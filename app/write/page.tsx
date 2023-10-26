@@ -1,4 +1,5 @@
 import BackBtn from "@/components/BackBtn";
+import Button from "@/components/Button";
 
 export default function Write(){
     return(
